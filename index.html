@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>FONIS Library</title>
-    <script type="text/javascript" src="js/libs/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="js/libs/bootstrap.js"></script>
-    <script type="text/javascript" src="css/bootstrap.css"></script>
-    <script type="text/javascript" src="css/bootstrap-responsive.min.css"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/libs/angular.1.0.7.min.js"></script>
 </head>
-<body>
-<div id="container">
-    <div>FONIS Library</div>
-    <div class="Book">
-        <h1>Book Detail</h1>
-        <div>
-            <span>Book id</span> <span id="BookID"></span>
-        </div>
-        <div>
-            <span>Book name</span> <span id="BookName"></span>
-        </div>
-        <div>
-            <span>Book author</span> <span id="BookAuthor"></span>
-        </div>
-        <div>
-            <button onclick="fillUpData()">Fill book up</button>
-        </div>
+    <body>
+        <div id="container" ng-app="bookLib">
+            <div>
+                <h1>FONIS Library</h1>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    Index of each entity should represent a list of all entities (in our case) that should be books
+                </div>
+                <div class="span12" ng-view>
+                </div>
 
-    </div>
-</div>
-<script type="text/javascript" src="js/app.js"></script>
-</body>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/libs/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/libs/bootstrap.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
 </html>
