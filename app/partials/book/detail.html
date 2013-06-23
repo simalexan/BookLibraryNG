@@ -1,11 +1,3 @@
-<h3>All books</h3>
-<div>
-    <ul>
-        <li ng-repeat="bookItem in books">
-            <span>{{bookItem.id}} - {{bookItem.name}} by {{bookItem.author}}</span></li>
-    </ul>
-</div>
-<hr>
 <div class="Book span12">
     <h3>Book Detail</h3>
     <div class="span10">
@@ -18,7 +10,7 @@
         <span>Book author</span> <span id="BookAuthor">{{book.author}}</span>
     </div>
     <div class="span10">
-        <button class="btn btn-primary" ng-click="openPage('/new')">Open New Book</button>
+        <button class="btn btn-info" ng-click="openPage('/')"><i class="icon-list icon-white"></i> Back to books index</button>
     </div>
 
 </div>

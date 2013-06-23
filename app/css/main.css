@@ -1,0 +1,10 @@
+body {
+    padding: 40px;
+}
+
+.bookListItem
+{
+    line-height: 30px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}

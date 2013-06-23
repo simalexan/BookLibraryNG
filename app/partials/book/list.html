@@ -1,0 +1,12 @@
+<h3 xmlns="http://www.w3.org/1999/html">All books</h3>
+<div>
+    <button class="btn btn-primary" ng-click="openPage('/book/new')"><i class="icon-plus icon-white"></i> New Book</button>
+</div>
+<div>
+    <ul class="span5">
+        <li ng-repeat="bookItem in books" class="span4 bookListItem">
+            <span>{{bookItem.id}} - {{bookItem.name}} by {{bookItem.author}}</span>
+            <button class="btn btn-info pull-right" ng-click="openPage('/book/' + bookItem.id)"><i class="icon-list-alt icon-white"></i> Details</button>
+        </li>
+    </ul>
+</div>

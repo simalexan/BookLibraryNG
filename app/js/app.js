@@ -1,15 +1,14 @@
 var bookLibApp = angular.module('bookLib', []).
     config(function($routeProvider) {
         $routeProvider.
-            when('/', {controller:BookCtrl, templateUrl:'bookDetail.html'}).
-            when('/new', {controller:BookCtrl, templateUrl:'addBook.html'}).
+            when('/', {controller:BookCtrl, templateUrl:'app/partials/book/list.html'}).
+            when('/book/new', {controller:BookCtrl, templateUrl:'app/partials/book/new.html'}).
+            when('/book/:bookId', {controller:BookCtrl, templateUrl:'app/partials/book/detail.html'}).
             otherwise({redirectTo:'/'});
     });
 
 function BookCtrl($scope, $location, bookService){
-    console.log("Book controller initalized");
     $scope.books = bookService.books;
-    console.log(JSON.stringify($scope.books));
     $scope.book = $scope.books[0];
     $scope.newBook = {};
     $scope.addNewBook = function() {
@@ -25,8 +24,6 @@ function BookCtrl($scope, $location, bookService){
     };
 
     $scope.openPage = function(newPath) {
-        console.log(JSON.stringify($scope.books));
-        console.log("about to open a new path");
         $location.path(newPath);
     };
 }
@@ -34,7 +31,6 @@ function BookCtrl($scope, $location, bookService){
 bookLibApp.factory('bookService', function() {
     var currentOpenedBook = {};
     var books = [];
-
     return {
         book: currentOpenedBook,
         books: books
