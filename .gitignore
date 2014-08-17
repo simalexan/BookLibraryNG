@@ -1,1 +1,12 @@
 .idea
+node_modules
+dist
+*~
+.tmp
+.sass-cache
+.project
+app/bower_components
+app/styles/*.css
+
+# OSX
+.DS_Store
