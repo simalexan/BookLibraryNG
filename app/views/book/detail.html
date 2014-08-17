@@ -1,16 +1,18 @@
 <div class="Book span12">
-    <h3>Book Detail</h3>
-    <div class="span10">
-        <span>Book id</span> <span id="BookID">{{book.id}}</span>
-    </div>
-    <div class="span10">
-        <span>Book name</span> <span id="BookName">{{book.name}}</span>
-    </div>
-    <div class="span10">
-        <span>Book author</span> <span id="BookAuthor">{{book.author}}</span>
-    </div>
-    <div class="span10">
-        <button class="btn btn-info" ng-click="openPage('/')"><i class="icon-list icon-white"></i> Back to books index</button>
-    </div>
+  <h3>Book Detail</h3>
+
+  <div class="col-lg-10">
+    <span>Book id</span> <span id="BookID" data-ng-bind="book.id"></span>
+  </div>
+  <div class="col-lg-10">
+    <span>Book name</span> <span id="BookName" data-ng-bind="book.name"></span>
+  </div>
+  <div class="col-lg-10">
+    <span>Book author</span> <span id="BookAuthor" data-ng-bind="book.author"></span>
+  </div>
+  <div class="col-lg-10">
+    <button class="btn btn-info" ng-click="openPage('/')"><i class="icon-list icon-white"></i> Back to books index
+    </button>
+  </div>
 
 </div>

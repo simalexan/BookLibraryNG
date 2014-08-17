@@ -1,7 +1,7 @@
 /**
  * Created by simalexan on 8/17/14.
  */
-bookLibApp.factory('bookService', function() {
+bookLibApp.factory('bookFactory', function () {
   var currentOpenedBook = {};
   var books = [];
   return {
@@ -11,11 +11,11 @@ bookLibApp.factory('bookService', function() {
      * Adding a new book
      * @param {Object} newBook
      */
-    addNewBook: function (newBook){
-      if(newBook.id){
+    addNewBook: function (newBook) {
+      if (newBook.id) {
         this.books.push(newBook);
       } else {
-        throw new Error('The book you wanted to create is empty');
+        throw new Error('The new book you wanted to add is empty');
       }
     }
   };

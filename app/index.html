@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FONIS Library</title>
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <!-- endbuild -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FONIS Library</title>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <!-- endbuild -->
 </head>
-    <body data-ng-app="bookLib">
-        <div id="container">
-            <div>
-                <h1>FONIS Library</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    Index of each entity should represent a list of all entities (in our case) that should be books
-                </div>
-                <hr>
-                <div class="col-lg-12" data-ng-view>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<body data-ng-app="bookLib">
+<div id="container">
+  <div>
+    <h1>FONIS Library</h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      Index of each entity should represent a list of all entities (in our case) that should be books
+    </div>
+    <hr>
+    <div class="col-lg-12" data-ng-view>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
 
-        <!-- build:js scripts/plugins.js -->
-        <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-        <!-- endbuild -->
+<!-- build:js scripts/plugins.js -->
+<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script type="text/javascript" src="scripts/app.js"></script>
-        <script type="text/javascript" src="scripts/controllers/book-ctrl.js"></script>
-        <script type="text/javascript" src="scripts/services/book-factory.js"></script>
-        <!-- endbuild -->
-    </body>
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/controllers/book-ctrl.js"></script>
+<script type="text/javascript" src="scripts/services/book-factory.js"></script>
+<!-- endbuild -->
+</body>
 </html>
